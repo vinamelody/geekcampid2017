@@ -4,8 +4,13 @@
  - Declare it like a variable
  Example
  */
+func greet(name: String?) -> String {
+    let greeting = "Hello, " + (name == nil ? "there" : name)! + "!"
+    return greeting
+}
 var sayHelloClosure: (_ name: String?) -> String = { (name) in
     return "Hello, " + (name == nil ? "there" : name)! + "!"
+    return greet(name: name)
 }
 /*:
  ### How to call the closure?
