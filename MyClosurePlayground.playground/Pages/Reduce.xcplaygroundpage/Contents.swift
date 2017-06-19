@@ -28,4 +28,10 @@ let totalSpend = sumTotalSpend(customers: customersData)
  What's a better way to do this using closure?
  */
 let smartReduce = customersData.map({ return $0["totalSpend"] as! Double }).reduce(0, +)
+
+/*:
+ Up for challenge? We'll use method chaining to find out how much is the total spending for regular customers.
+ */
+
+
 //: [Next](@next)
