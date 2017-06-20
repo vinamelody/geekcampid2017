@@ -1,36 +1,36 @@
 //: [Back](@previous)
 /*:
  ## Reduce
- Given an array of customers with status and total spending.
+ Given an array of customers with status and points.
  */
 import Foundation
 let customersData: [[String: Any]] = [
-    ["name": "Karmen", "status": "Regular", "totalSpend": 129.9],
-    ["name": "Joni", "status": "Premium", "totalSpend": 27.20],
-    ["name": "Dian", "status" : "Regular", "totalSpend": 119.0],
-    ["name": "Rangga", "status": "Regular", "totalSpend": 459.0]
+    ["name": "Karmen", "status": "Regular", "points": 129],
+    ["name": "Joni", "status": "Premium", "points": 27],
+    ["name": "Dian", "status" : "Regular", "points": 119],
+    ["name": "Rangga", "status": "Regular", "points": 45]
 ]/*:
- How to get total spending of all customers?
+ How to get total points of all customers?
  
  The usual way is ...
  */
-func sumTotalSpend(customers: [[String:Any]]) -> Double {
-    var total: Double = 0
+func sumTotalPoints(customers: [[String:Any]]) -> Int {
+    var total: Int = 0
     for customer in customers {
-        if let spending = customer["totalSpend"] as? Double {
-            total += spending
+        if let points = customer["points"] as? Int {
+            total += points
         }
     }
     return total
 }
-let totalSpend = sumTotalSpend(customers: customersData)
+let totalPoints = sumTotalPoints(customers: customersData)
 /*:
  What's a better way to do this using closure?
  */
-let smartReduce = customersData.map({ return $0["totalSpend"] as! Double }).reduce(0, +)
-
+let smartReduce = customersData.map({ return $0["points"] as! Int }).reduce(0, +)
+smartReduce
 /*:
- Up for challenge? We'll use method chaining to find out how much is the total spending for regular customers.
+ Up for challenge? We'll use method chaining to find out how much is the total points for regular customers.
  */
 
 
