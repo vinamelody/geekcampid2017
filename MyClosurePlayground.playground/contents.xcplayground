@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' display-mode='raw'>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
     <pages>
-        <page name='Code'/>
         <page name='Title'/>
         <page name='Hello, Swift'/>
         <page name='Function'/>
@@ -10,5 +9,7 @@
         <page name='Filter'/>
         <page name='Reduce'/>
         <page name='Summary'/>
+        <page name='Shout out'/>
+        <page name='Code'/>
     </pages>
 </playground>

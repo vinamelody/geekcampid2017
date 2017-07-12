@@ -1,5 +1,5 @@
 /*:
- ### Function
+ ## Function
  
  - Function name
  - Parameter variable name & type

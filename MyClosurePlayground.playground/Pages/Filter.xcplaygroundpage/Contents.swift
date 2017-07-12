@@ -1,4 +1,3 @@
-//: [Back](@previous)
 /*:
  ## Filter
  Given an array of customers with status data
@@ -39,4 +38,4 @@ let smartRegularFilter = customersStatusData.filter({
 let smarterRegularFilter = customersStatusData.filter({
     return ($0["status"]?.contains("Regular"))!
 })
-//: [Next](@next)
+//: [Back](@previous) [Next](@next)

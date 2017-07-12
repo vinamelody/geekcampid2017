@@ -1,5 +1,4 @@
-//: [Back](@previous)
-/*: 
+/*:
  ## Map
  Given an array of customers.
  */
@@ -31,4 +30,4 @@ let smartGreetings = customers.map({ (name) in
  */
 let smarterGreetings = customers.map({ return greet(name: $0)})
 smartGreetings
-//: [Next](@next)
+//: [Back](@previous) [Next](@next)

@@ -1,4 +1,3 @@
-//: [Back](@previous)
 /*:
  ## Reduce
  Given an array of customers with status and points.
@@ -33,5 +32,4 @@ smartReduce
  Up for challenge? We'll use method chaining to find out how much is the total points for regular customers.
  */
 
-
-//: [Next](@next)
+//: [Back](@previous) [Next](@next)
