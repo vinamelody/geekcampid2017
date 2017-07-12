@@ -15,5 +15,6 @@ func greet(name: String?) -> String {
 /*:
  ### How to call the function?
  */
-
+greet(name: "Vina")
+greet(name: nil)
 //: [Back](@previous) [Next](@next)

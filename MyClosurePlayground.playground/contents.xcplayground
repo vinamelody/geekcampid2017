@@ -8,8 +8,6 @@
         <page name='Map'/>
         <page name='Filter'/>
         <page name='Reduce'/>
-        <page name='Summary'/>
-        <page name='Shout out'/>
         <page name='Code'/>
     </pages>
 </playground>

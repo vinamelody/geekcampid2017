@@ -28,7 +28,7 @@ let regularFilter = filterRegular(customers: customersStatusData)
  What's a better way to do this using closure?
  */
 let smartRegularFilter = customersStatusData.filter({
-    customer in (customer["status"]?.contains("Premium"))!
+    customer in (customer["status"]?.contains("Regular"))!
 })
 
 

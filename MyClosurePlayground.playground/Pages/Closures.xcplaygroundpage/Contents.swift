@@ -16,5 +16,7 @@ var sayHelloClosure: (_ name: String?) -> String = { (name) in
 /*:
  ### How to call the closure?
  */
+sayHelloClosure("Vina")
+sayHelloClosure(nil)
 
 //: [Back](@previous) [Next](@next)

@@ -26,10 +26,17 @@ let totalPoints = sumTotalPoints(customers: customersData)
 /*:
  What's a better way to do this using closure?
  */
+
 let smartReduce = customersData.map({ return $0["points"] as! Int }).reduce(0, +)
 smartReduce
 /*:
  Up for challenge? We'll use method chaining to find out how much is the total points for regular customers.
  */
 
+let regularSpending = customersData
+    .filter({ return ($0["status"] as! String).contains("Regular")})
+    .map({ return $0["points"] as! Int})
+    .reduce(0, +)
+regularSpending
 //: [Back](@previous) [Next](@next)
+
